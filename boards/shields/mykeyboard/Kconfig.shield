@@ -1,5 +1,0 @@
-config SHIELD_MYKEYBOARD_LEFT
-    def_bool $(shield_is,mykeyboard_left)
-
-config SHIELD_MYKEYBOARD_RIGHT
-    def_bool $(shield_is,mykeyboard_right)

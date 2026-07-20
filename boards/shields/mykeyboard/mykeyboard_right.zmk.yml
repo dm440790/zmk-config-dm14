@@ -1,9 +1,0 @@
-file_format: "1"
-id: mykeyboard_right
-name: MyKeyboard (Right)
-type: shield
-url: https://github.com/yourusername/yourrepo
-requires: ["nice_nano_v2"]
-exposes: ["mykeyboard_right"]
-siblings: ["mykeyboard_left"]
-features: ["keys"]

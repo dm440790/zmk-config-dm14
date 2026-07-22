@@ -5,3 +5,9 @@ include:
     shield: caldera_left
   - board: nice_nano@2.0.0
     shield: caldera_right
+  # Temporary: flash this first to clear a possibly corrupted settings
+  # partition, then remove this entry once things are working again.
+  - board: nice_nano@2.0.0
+    shield: settings_reset
+  - board: nice_nano@2.0.0
+    shield: settings_reset

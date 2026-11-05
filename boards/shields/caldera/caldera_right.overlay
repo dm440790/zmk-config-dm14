@@ -13,4 +13,17 @@
         , <&pro_micro 4 GPIO_ACTIVE_HIGH>
         , <&pro_micro 3 GPIO_ACTIVE_HIGH>
         ;
+
+    // Right half only: row B (2nd row) is jumpered to pin 009 (pro_micro 10)
+    // instead of 029 (pro_micro 20), because 029 is damaged on this controller.
+    // All other rows are unchanged from caldera.dtsi.
+    // If you later fit a healthy controller and remove the jumper wire,
+    // change the second entry back to 20 (or delete this whole row-gpios block).
+    row-gpios
+        = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row A
+        , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row B (rerouted, label 009)
+        , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row C
+        , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row D
+        , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row E
+        ;
 };

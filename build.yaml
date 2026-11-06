@@ -1,11 +1,10 @@
-# This file generates the GitHub Actions matrix.
+# For ZMK v0.3 the board is still called nice_nano_v2
+# (nice_nano@2.0.0 only exists on the newer main branch).
 ---
 include:
-  - board: nice_nano@2.0.0
+  - board: nice_nano_v2
     shield: caldera_left
-  - board: nice_nano@2.0.0
+  - board: nice_nano_v2
     shield: caldera_right
-  # Temporary: flash this first to clear a possibly corrupted settings
-  # partition, then remove this entry once things are working again.
-  - board: nice_nano@2.0.0
+  - board: nice_nano_v2
     shield: settings_reset
